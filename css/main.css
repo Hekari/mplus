@@ -48,6 +48,7 @@ body {
 
 .navbar-brand {
   font-size: 26px;
+  font-weight: bold;
 }
 
 nav {
@@ -65,6 +66,7 @@ button:focus {
 
 #HeroBig {
   height: 100vh;
+  width: 100%;
 }
 
 .hero {
@@ -74,6 +76,7 @@ button:focus {
   -webkit-transform: translateX(-30%);
           transform: translateX(-30%);
   padding-top: 30vh;
+  color: #212529;
 }
 
 .hero p {
@@ -116,5 +119,15 @@ button:focus {
 
 .heroimg {
   display: none;
+}
+
+.addBg {
+  background-color: #00000b;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.active {
+  color: #ffba08 !important;
 }
 /*# sourceMappingURL=main.css.map */
