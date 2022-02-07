@@ -29,6 +29,9 @@ background-size: cover;
     font-family: 'Roboto', sans-serif!important;
     scroll-behavior: smooth!important;
 }
+#bootstrap-overrides .navbar-brand{
+    color: #212529;
+}
 .fa-gift{
 font-size: 2rem;
 }
