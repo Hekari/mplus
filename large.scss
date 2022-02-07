@@ -1,0 +1,26 @@
+.navbar-brand{
+    font-size: 26px;
+}
+.nav-link{
+    font-size: 23px;
+}
+.hero{
+    p{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    h1{
+        width: 40%;
+        font-size: 5rem;
+        font-weight: bold;
+    }
+}
+.heroimg{
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 50vh;
+    width: 40vw;
+    background: url(/img/Notifications_Isometric.png) no-repeat center;
+    margin-top: 20vh;
+}
