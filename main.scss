@@ -15,23 +15,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 }
-#bootstrap-overrides .active{
-    color: gold;
-}
-#bootstrap-overrides a{
-    color: black;
-    transition: .3s;
-}
-#bootstrap-overrides a:hover{
-    color: $defaultbg;
-}
+
 #bootstrap-overrides{
     font-family: 'Roboto', sans-serif!important;
     scroll-behavior: smooth!important;
 }
-#bootstrap-overrides .navbar-brand{
-    color: #212529;
-}
+
 .fa-gift{
 font-size: 2rem;
 }
@@ -42,9 +31,8 @@ font-size: 2rem;
 .navbar-brand{
     font-size: 26px;
     font-weight: bold;
-}
-nav{
-    z-index: 1;
+    transition: color .3s;
+    visibility: inherit;
 }
 button:focus{
     outline: none;
@@ -55,6 +43,21 @@ button:focus{
 #HeroBig{
     height: 100vh;
     width: 100%;
+    .learn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 95vh;
+        font-size: 20px;
+        font-weight: bold;
+        .fa-arrow-down{
+            position: absolute;
+            top: 5vh;
+            right: 50%;
+            animation: move .7s infinite;
+            transition: .5s ease-in-out;
+        }
+    }
 }
 .hero{
     position: absolute;
@@ -62,7 +65,6 @@ button:focus{
     left: 30%;
     transform: translateX(-30%);
     padding-top: 30vh;
-    color: #212529;
     p{
         color: white;
         position: absolute;
@@ -81,23 +83,50 @@ button:focus{
     font-size: 25px;
 }
 #about{
+    h1{
+        align-self: flex-start;
+    }
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    color: $defaultfont;
-    height: 100vh;
-    background-color: royalblue;
+    justify-content: space-around;
+    height: 115vh;
+    background: #F7971E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 .nav-link{
     font-size: 26px;
+    font-weight: bold;
+    color: black!important;
+}
+#bootstrap-overrides .nav-link:hover{
+    color: #ffba08!important;
+    transition: color .3s!important;
+}
+#bootstrap-overrides{
+    .card-body{
+        background-color:#fff9f3;
+    }
+    
 }
 .heroimg{
     display: none;
 }
-.addBg{
-    background-color:#00000b;
-    transition: background-color .3s;
-}
 .active{
-    color: $defaultbg!important;
+    color:#ffba08!important;
+}
+.navbar-brand:hover{
+    color: #ffda79!important;
+}
+@keyframes move {
+    0%{
+        transform: translateY(0vh);
+    }
+    50%{
+        transform: translateY(1vh);
+    }
+    
 }

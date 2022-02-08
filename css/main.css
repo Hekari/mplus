@@ -15,27 +15,9 @@ body {
   background-size: cover;
 }
 
-#bootstrap-overrides .active {
-  color: gold;
-}
-
-#bootstrap-overrides a {
-  color: black;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-#bootstrap-overrides a:hover {
-  color: #ffba08;
-}
-
 #bootstrap-overrides {
   font-family: "Roboto", sans-serif !important;
   scroll-behavior: smooth !important;
-}
-
-#bootstrap-overrides .navbar-brand {
-  color: #212529;
 }
 
 .fa-gift {
@@ -49,10 +31,9 @@ body {
 .navbar-brand {
   font-size: 26px;
   font-weight: bold;
-}
-
-nav {
-  z-index: 1;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  visibility: inherit;
 }
 
 button:focus {
@@ -69,6 +50,26 @@ button:focus {
   width: 100%;
 }
 
+#HeroBig .learn {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 95vh;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#HeroBig .learn .fa-arrow-down {
+  position: absolute;
+  top: 5vh;
+  right: 50%;
+  -webkit-animation: move .7s infinite;
+          animation: move .7s infinite;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
 .hero {
   position: absolute;
   width: 25vw;
@@ -76,7 +77,6 @@ button:focus {
   -webkit-transform: translateX(-30%);
           transform: translateX(-30%);
   padding-top: 30vh;
-  color: #212529;
 }
 
 .hero p {
@@ -102,32 +102,74 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
-  height: 100vh;
-  background-color: royalblue;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 115vh;
+  background: #F7971E;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#FFD200), to(#F7971E));
+  background: linear-gradient(to right, #FFD200, #F7971E);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#about h1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .nav-link {
   font-size: 26px;
+  font-weight: bold;
+  color: black !important;
+}
+
+#bootstrap-overrides .nav-link:hover {
+  color: #ffba08 !important;
+  -webkit-transition: color 0.3s !important;
+  transition: color 0.3s !important;
+}
+
+#bootstrap-overrides .card-body {
+  background-color: #fff9f3;
 }
 
 .heroimg {
   display: none;
 }
 
-.addBg {
-  background-color: #00000b;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
-}
-
 .active {
   color: #ffba08 !important;
+}
+
+.navbar-brand:hover {
+  color: #ffda79 !important;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+  50% {
+    -webkit-transform: translateY(1vh);
+            transform: translateY(1vh);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+  }
+  50% {
+    -webkit-transform: translateY(1vh);
+            transform: translateY(1vh);
+  }
 }
 /*# sourceMappingURL=main.css.map */
