@@ -169,4 +169,9 @@ button:focus {
             transform: translateY(1vh);
   }
 }
+
+#pricing {
+  height: 100vh;
+  background-color: white;
+}
 /*# sourceMappingURL=main.css.map */
