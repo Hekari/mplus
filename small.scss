@@ -25,7 +25,11 @@
     font-weight: bold;
 }
 #about{
+    flex-wrap: wrap;
     h1{
         top: 110vh;
     }
+}
+.question-img{
+    align-items: center;
 }

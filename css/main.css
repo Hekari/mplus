@@ -145,7 +145,7 @@ button:focus {
 }
 
 .navbar-brand:hover {
-  color: #ffda79 !important;
+  color: #ffba08 !important;
 }
 
 @-webkit-keyframes move {
@@ -171,7 +171,47 @@ button:focus {
 }
 
 #pricing {
-  height: 100vh;
-  background-color: white;
+  height: 70vh;
+  background-color: #fed330;
+}
+
+.question-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question-card {
+  width: 20rem;
+}
+
+footer {
+  height: 30vh;
+}
+
+.progress {
+  width: 20rem;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

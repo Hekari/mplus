@@ -118,7 +118,7 @@ button:focus{
     color:#ffba08!important;
 }
 .navbar-brand:hover{
-    color: #ffda79!important;
+    color: #ffba08!important;
 }
 // animations
 @keyframes move {
@@ -131,6 +131,28 @@ button:focus{
     
 }
 #pricing{
-    height: 100vh;
-    background-color: white;
+    height: 70vh;
+    background-color: #fed330;
+   
+}
+.question-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.question-card{
+    width: 20rem;
+}
+footer{
+    height: 30vh;
+}
+.progress{
+    width: 20rem;
+}
+.socials{
+    display: flex;
+    padding-top: 5vh;
+    justify-content: space-between;
 }

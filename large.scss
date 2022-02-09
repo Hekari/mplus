@@ -21,7 +21,7 @@
     right: 0;
     height: 50vh;
     width: 40vw;
-    background: url(../img/Notifications_Isometric.png) no-repeat center;
+    background: url('../img/Designer\ _TwoColor.png') no-repeat center;
     margin-top: 20vh;
 }
 .nav-link{
@@ -32,4 +32,11 @@
     h1{
         top: 120vh;
     }
+}
+.question-img{
+    align-items: flex-center;
+}
+.socials{
+    flex-direction: column;
+    justify-content: flex-start;
 }
