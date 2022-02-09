@@ -30,4 +30,12 @@
 .nav-link {
   font-weight: normal;
 }
+
+#about {
+  height: 90vh;
+}
+
+#about h1 {
+  top: 120vh;
+}
 /*# sourceMappingURL=large.css.map */

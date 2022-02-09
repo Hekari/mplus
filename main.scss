@@ -47,13 +47,13 @@ button:focus{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 95vh;
+        top: 90vh;
         font-size: 20px;
         font-weight: bold;
         .fa-arrow-down{
             position: absolute;
             top: 5vh;
-            right: 50%;
+            right: 45%;
             animation: move .7s infinite;
             transition: .5s ease-in-out;
         }
@@ -64,7 +64,7 @@ button:focus{
     width: 25vw;
     left: 30%;
     transform: translateX(-30%);
-    padding-top: 30vh;
+    padding-top: 20vh;
     p{
         color: white;
         position: absolute;
@@ -84,17 +84,16 @@ button:focus{
 }
 #about{
     h1{
-        align-self: flex-start;
+        position: absolute;
+        top: 110vh;
+        z-index: 1;
     }
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    height: 115vh;
-    background: #F7971E;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    height: 150vh;
+    background: white;  /* fallback for old browsers */
 
 }
 .nav-link{
@@ -121,6 +120,7 @@ background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, F
 .navbar-brand:hover{
     color: #ffda79!important;
 }
+// animations
 @keyframes move {
     0%{
         transform: translateY(0vh);

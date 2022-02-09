@@ -55,7 +55,7 @@ button:focus {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 95vh;
+  top: 90vh;
   font-size: 20px;
   font-weight: bold;
 }
@@ -63,7 +63,7 @@ button:focus {
 #HeroBig .learn .fa-arrow-down {
   position: absolute;
   top: 5vh;
-  right: 50%;
+  right: 45%;
   -webkit-animation: move .7s infinite;
           animation: move .7s infinite;
   -webkit-transition: .5s ease-in-out;
@@ -76,7 +76,7 @@ button:focus {
   left: 30%;
   -webkit-transform: translateX(-30%);
           transform: translateX(-30%);
-  padding-top: 30vh;
+  padding-top: 20vh;
 }
 
 .hero p {
@@ -109,18 +109,15 @@ button:focus {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 115vh;
-  background: #F7971E;
+  height: 150vh;
+  background: white;
   /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#FFD200), to(#F7971E));
-  background: linear-gradient(to right, #FFD200, #F7971E);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #about h1 {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  position: absolute;
+  top: 110vh;
+  z-index: 1;
 }
 
 .nav-link {

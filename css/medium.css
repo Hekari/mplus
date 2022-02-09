@@ -30,4 +30,12 @@
 .nav-link {
   font-weight: bold;
 }
+
+#about {
+  height: 90vh;
+}
+
+#about h1 {
+  top: 120vh;
+}
 /*# sourceMappingURL=medium.css.map */
