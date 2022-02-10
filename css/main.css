@@ -172,7 +172,7 @@ button:focus {
 
 #pricing {
   height: 70vh;
-  background-color: #fed330;
+  background-image: linear-gradient(10deg, white, white 60%, #ffd829 60%, #ffd829);
 }
 
 .question-img {
@@ -213,5 +213,72 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: royalblue;
+  height: 100vh;
+}
+
+#contact a {
+  background: none;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  width: 200px;
+  height: 50px;
+  z-index: 1;
+  padding: 10px 25px;
+  color: black;
+}
+
+#contact a::after {
+  content: '';
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  border: 1px solid black;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.15s ease-out 0s;
+  transition: -webkit-transform 0.15s ease-out 0s;
+  transition: transform 0.15s ease-out 0s;
+  transition: transform 0.15s ease-out 0s, -webkit-transform 0.15s ease-out 0s;
+}
+
+#contact a::before {
+  content: '';
+  top: 5px;
+  right: 5px;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  background-color: white;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.15s ease-out 0s;
+  transition: -webkit-transform 0.15s ease-out 0s;
+  transition: transform 0.15s ease-out 0s;
+  transition: transform 0.15s ease-out 0s, -webkit-transform 0.15s ease-out 0s;
+}
+
+#contact a.moveBtn:before {
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+
+#contact a.moveBtn:after {
+  -webkit-transform: translate(-5px, 5px);
+          transform: translate(-5px, 5px);
 }
 /*# sourceMappingURL=main.css.map */
