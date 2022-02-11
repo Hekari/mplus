@@ -33,10 +33,27 @@
         top: 120vh;
     }
 }
-.question-img{
-    align-items: flex-center;
-}
 .socials{
     flex-direction: column;
     justify-content: flex-start;
+}
+#contact{
+    .card{
+       left: 15%;
+       top:40%;
+       transform: translateY(-40%);
+    }
+    form{
+        align-items: flex-end;
+        padding: 0 10vw;
+    }
+    a{
+        left: -1vw;
+    }
+}
+#pricing{
+    a{
+        top: 0;
+        left: 2vw;
+    }
 }

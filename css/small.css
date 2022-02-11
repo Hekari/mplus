@@ -43,4 +43,9 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+#pricing a {
+  top: 0;
+  left: 2vw;
+}
 /*# sourceMappingURL=small.css.map */

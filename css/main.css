@@ -175,6 +175,61 @@ button:focus {
   background-image: linear-gradient(10deg, white, white 60%, #ffd829 60%, #ffd829);
 }
 
+#pricing a {
+  background: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  top: 2vh;
+  width: 200px;
+  height: 50px;
+  z-index: 1;
+  padding: 10px 25px;
+  color: black;
+}
+
+#pricing a::after {
+  content: '';
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  border: 1px solid black;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.15s ease-out 0s;
+  transition: -webkit-transform 0.15s ease-out 0s;
+  transition: transform 0.15s ease-out 0s;
+  transition: transform 0.15s ease-out 0s, -webkit-transform 0.15s ease-out 0s;
+}
+
+#pricing a::before {
+  content: '';
+  top: 5px;
+  right: 5px;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  background-color: #ffd829;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.15s ease-out 0s;
+  transition: -webkit-transform 0.15s ease-out 0s;
+  transition: transform 0.15s ease-out 0s;
+  transition: transform 0.15s ease-out 0s, -webkit-transform 0.15s ease-out 0s;
+}
+
+#pricing a.moveBtn:before {
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+
+#pricing a.moveBtn:after {
+  -webkit-transform: translate(-6px, 6px);
+          transform: translate(-6px, 6px);
+}
+
 .question-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,25 +271,58 @@ footer {
 }
 
 #contact {
+  background-color: royalblue;
+  height: 100vh;
+}
+
+#contact .card {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#contact button {
+  display: block;
+  border: none;
+  background: none;
+}
+
+#contact h1 {
+  text-align: center;
+  padding-top: 5vh;
+  color: white;
+}
+
+#contact form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: royalblue;
-  height: 100vh;
+}
+
+#contact input {
+  width: 250px;
+  margin-top: 2vh;
 }
 
 #contact a {
   background: none;
   position: relative;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
   border: none;
+  top: 4vh;
   width: 200px;
   height: 50px;
   z-index: 1;
@@ -278,7 +366,7 @@ footer {
 }
 
 #contact a.moveBtn:after {
-  -webkit-transform: translate(-5px, 5px);
-          transform: translate(-5px, 5px);
+  -webkit-transform: translate(-6px, 6px);
+          transform: translate(-6px, 6px);
 }
 /*# sourceMappingURL=main.css.map */
