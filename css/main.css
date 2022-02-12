@@ -294,6 +294,10 @@ footer {
   color: white;
 }
 
+#contact p {
+  color: white;
+}
+
 #contact form {
   display: -webkit-box;
   display: -ms-flexbox;
