@@ -17,16 +17,15 @@ background-size: cover;
 }
 
 #bootstrap-overrides{
-    font-family: 'Roboto', sans-serif!important;
-    scroll-behavior: smooth!important;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .fa-gift{
 font-size: 2rem;
 }
 .navbar-toggler{
-    border: none!important;
-
+    border: none;
 }
 .navbar-brand{
     font-size: 26px;
@@ -99,11 +98,11 @@ button:focus{
 .nav-link{
     font-size: 26px;
     font-weight: bold;
-    color: black!important;
+    color: black;
 }
 #bootstrap-overrides .nav-link:hover{
-    color: #ffba08!important;
-    transition: color .3s!important;
+    color: #ffba08;
+    transition: color .3s;
 }
 #bootstrap-overrides{
     .card-body{
@@ -115,10 +114,7 @@ button:focus{
     display: none;
 }
 .active{
-    color:#ffba08!important;
-}
-.navbar-brand:hover{
-    color: #ffba08!important;
+    color:#ffba08;
 }
 // animations
 @keyframes move {
@@ -203,22 +199,25 @@ footer{
 
 #contact{
     background-image:linear-gradient(0deg, rgb(255, 255, 255), rgb(255, 255, 255) 0%, rgb(255, 216, 41) 0%, rgb(255, 216, 41));
-    height: 100vh;
+    height: 90vh;
+    width: 100%;
     button{
         display: block;
         border: none;
         background: none;
     }
     h1{
+        text-align: center;
         padding-top: 5vh;
-        background-color: white;
         color: black;
     }
     p{
         color: white;
     }
     form{
-        padding-top: 25vh;
+        margin: 10px 10px;
+        height: 50vh;
+        border: 3px solid white;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -232,6 +231,7 @@ footer{
         outline: none;
     }
     textarea{
+        border: none;
         margin-top: 2vh;
         outline: none;
         resize: none;
