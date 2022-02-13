@@ -49,24 +49,6 @@
           justify-content: flex-start;
 }
 
-#contact .card {
-  left: 15%;
-  top: 40%;
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
-}
-
-#contact form {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 0 10vw;
-}
-
-#contact a {
-  left: -1vw;
-}
-
 #pricing a {
   top: 0;
   left: 2vw;
