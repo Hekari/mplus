@@ -45,7 +45,15 @@
     }
 }
 #contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     h1{
         text-align: start;
+        color: black;
+        background-color: #fff;
+    }
+    form{
+        width: 50vw;
     }
 }

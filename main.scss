@@ -95,14 +95,14 @@ button:focus{
     background: white;  /* fallback for old browsers */
 
 }
-.nav-link{
+#boostrap-overrides .nav-link{
     font-size: 26px;
-    font-weight: bold;
     color: black;
+    transition: color .3s;
+    font-weight: bold;
 }
 #bootstrap-overrides .nav-link:hover{
     color: #ffba08;
-    transition: color .3s;
 }
 #bootstrap-overrides{
     .card-body{
@@ -183,7 +183,7 @@ button:focus{
     align-items: center;
 }
 .question-card{
-    width: 20rem;
+    width: 18rem;
 }
 footer{
     height: 30vh;
@@ -209,7 +209,8 @@ footer{
     h1{
         text-align: center;
         padding-top: 5vh;
-        color: black;
+        color: white;
+        border-bottom: 1px solid white;
     }
     p{
         color: white;
@@ -225,12 +226,14 @@ footer{
     }
     input{
         display: block;
-        width: 250px;
+        width: 350px;
+        height: 100px;
         margin-top: 2vh;
         border: none;
         outline: none;
     }
     textarea{
+        width: 350px;
         border: none;
         margin-top: 2vh;
         outline: none;

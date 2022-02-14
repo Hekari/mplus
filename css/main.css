@@ -120,16 +120,16 @@ button:focus {
   z-index: 1;
 }
 
-.nav-link {
+#boostrap-overrides .nav-link {
   font-size: 26px;
-  font-weight: bold;
   color: black;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  font-weight: bold;
 }
 
 #bootstrap-overrides .nav-link:hover {
   color: #ffba08;
-  -webkit-transition: color .3s;
-  transition: color .3s;
 }
 
 #bootstrap-overrides .card-body {
@@ -249,7 +249,7 @@ button:focus {
 }
 
 .question-card {
-  width: 20rem;
+  width: 18rem;
 }
 
 footer {
@@ -286,7 +286,8 @@ footer {
 #contact h1 {
   text-align: center;
   padding-top: 5vh;
-  color: black;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 #contact p {
@@ -314,13 +315,15 @@ footer {
 
 #contact input {
   display: block;
-  width: 250px;
+  width: 350px;
+  height: 100px;
   margin-top: 2vh;
   border: none;
   outline: none;
 }
 
 #contact textarea {
+  width: 350px;
   border: none;
   margin-top: 2vh;
   outline: none;
