@@ -28,6 +28,7 @@
     font-weight: normal;
 }
 #about{
+    flex-direction: row;
     height: 90vh;
     h1{
         top: 120vh;
@@ -55,5 +56,13 @@
     }
     form{
         width: 50vw;
+    }
+}
+#bootstrap-overrides{
+    .navbar-nav{
+        a{
+            color: black;
+            font-weight: normal;
+        }
     }
 }

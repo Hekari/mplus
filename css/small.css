@@ -43,4 +43,8 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+#bootstrap-overrides .navbar-nav {
+  color: black;
+}
 /*# sourceMappingURL=small.css.map */

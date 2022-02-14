@@ -32,6 +32,10 @@
 }
 
 #about {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 90vh;
 }
 
@@ -74,5 +78,10 @@
 
 #contact form {
   width: 50vw;
+}
+
+#bootstrap-overrides .navbar-nav a {
+  color: black;
+  font-weight: normal;
 }
 /*# sourceMappingURL=large.css.map */

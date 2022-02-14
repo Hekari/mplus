@@ -81,25 +81,33 @@ button:focus{
 .fa-bars{
     font-size: 25px;
 }
+#bootstrap-overrides{
+    .navbar-nav{
+        a{
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
 #about{
     h1{
-        position: absolute;
-        top: 110vh;
+        // position: relative;
+        // position: absolute;
+        // top: 100vh;
         z-index: 1;
     }
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     height: 150vh;
     background: white;  /* fallback for old browsers */
 
 }
-#boostrap-overrides .nav-link{
+.nav-link{
     font-size: 26px;
-    color: black;
     transition: color .3s;
-    font-weight: bold;
 }
 #bootstrap-overrides .nav-link:hover{
     color: #ffba08;
@@ -187,6 +195,14 @@ button:focus{
 }
 footer{
     height: 30vh;
+    a{
+        color: black;
+        text-decoration: none;
+        transition: color .3s ease-in-out;
+    }
+    a:hover{
+        color:#fff9f3;
+    }
 }
 .progress{
     width: 20rem;
@@ -195,6 +211,27 @@ footer{
     display: flex;
     padding-top: 5vh;
     justify-content: space-between;
+    transition: animation .7s ease-in-out;
+}
+.fa-instagram:hover{
+    animation: moveCircle .7s ease-in-out;
+    
+}
+.fa-facebook:hover{
+    animation: moveCircle .7s ease-in-out;
+    
+
+}
+
+.fa-twitter:hover{
+    animation: moveCircle .7s ease-in-out;
+
+}
+.regulamin{
+    border-bottom: 1px solid white;
+}
+.policy{
+    border-bottom: 1px solid white;
 }
 
 #contact{
@@ -283,5 +320,16 @@ footer{
     }
     a.moveBtn:after{
         transform: translate(-6px,6px);
+    }
+}
+@keyframes moveCircle {
+    0%{
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }

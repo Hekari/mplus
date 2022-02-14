@@ -44,4 +44,8 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+#bootstrap-overrides .navbar-nav {
+  color: black !important;
+}
 /*# sourceMappingURL=medium.css.map */
