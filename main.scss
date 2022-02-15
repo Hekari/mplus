@@ -213,20 +213,7 @@ footer{
     justify-content: space-between;
     transition: animation .7s ease-in-out;
 }
-.fa-instagram:hover{
-    animation: moveCircle .7s ease-in-out;
-    
-}
-.fa-facebook:hover{
-    animation: moveCircle .7s ease-in-out;
-    
 
-}
-
-.fa-twitter:hover{
-    animation: moveCircle .7s ease-in-out;
-
-}
 .regulamin{
     border-bottom: 1px solid white;
 }
@@ -320,16 +307,5 @@ footer{
     }
     a.moveBtn:after{
         transform: translate(-6px,6px);
-    }
-}
-@keyframes moveCircle {
-    0%{
-        transform: rotate(0deg);
-    }
-    60%{
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(360deg);
     }
 }
